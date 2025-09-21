@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=DynaPuff:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Story+Script&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height:100%;
+    width:100%;
+    overflow-x:hidden;
+    user-select: none;
+}
+
+header{
+    display:flex;
+    position:sticky;
+    flex-direction: row wrap;
+    height: 10%;
+    justify-content:space-around;
+    align-items: center;
+    justify-items: center;
+    background-image: linear-gradient(0deg,rgb(250, 250, 250) 0%, rgb(233, 215, 176) 100%);
+    box-shadow: 0px 3px 10px 2px #a3a3a3;
+    margin-bottom:20px;
+}
+
+header h1{
+    margin-left:3%;
+    color:rgb(70, 82, 22);
+    font-family: "Cormorant Unicase";
+    text-align:center;
+}
+
+header img{
+    height: 80%;
+    opacity: 0.7;
+}
+
+nav{
+    display:flex;
+    justify-content: center;
+    margin-bottom:40px;
+    align-items: center;
+    justify-items: center;
+}
+
+.linkbutton{
+    display:flex;
+    flex-direction: row;
+    background-color:rgba(247, 224, 24);
+    border: solid rgba(247, 224, 24);
+    border-radius:5px;
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    font-size:20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkbutton:hover{
+    font-size: 25px;
+    transition:0.5s;
+    background-color:rgb(70, 82, 22);
+}
+
+.linkbutton:not(hover){
+    font-size: 20px;
+    transition:0.5s;
+    background-color:rgb(247, 224, 24);
+}
+
+section{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+section p{
+    font-family: "Libre Baskerville";
+    text-align:center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tasks{
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submitTaskPrompt{
+    background-color: rgb(250, 250, 250);
+    box-shadow: 0px 1px 6px 1px #a3a3a3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction:row;
+    height:60px;
+    width: 80%;
+    border: solid rgb(250, 250, 250);
+    border-radius: 20px;
+}
+
+#submitTaskInput{
+    display:inline-block;
+    height:80%;
+    width:74%;
+    background-color: rgb(233, 215, 176);
+    border: solid rgba(233, 215, 176);
+    border-radius: 10px;
+    font-size:20px;
+    overflow:auto;
+}
+
+#submitTaskInput:focus{
+    outline:none;
+}
+
+#submitTaskButton{
+    display:inline-block;
+    height:80%;
+    width:24%;
+    margin-left: 1%;
+    background-color: rgba(64, 116, 48, 0.5);
+    border: solid rgba(64, 116, 48, 0.5);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size:15px;
+    overflow:auto;
+}
+
+#submitTaskButton:hover{
+    background-color: rgb(64, 116, 48);
+    border: solid rgb(64, 116, 48);
+    transition: 0.5s;
+}
+
+#submitTaskButton:not(:hover){
+    background-color: rgb(64, 116, 48, 0.5);
+    border: solid rgb(64, 116, 48, 0.5);
+    transition: 0.5s;
+}
+
+#submitTaskButton:active{
+    background-color: rgb(42, 75, 32);
+    border: solid rgb(42, 75, 32);
+    transition: 0.25s;
+}
+
+.task{
+    background-color: rgba(233, 215, 176, 0.5);
+    box-shadow: 0px 1px 6px 1px #a3a3a3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction:row;
+    height:60px;
+    width: 80%;
+    margin-top:20px;
+    border: solid rgba(233, 215, 176, 0.5);
+    border-radius: 20px;
+    overflow:auto;
+    order:1;
+}
+
+.taskText{
+    display:inline-flex;
+    height:80%;
+    width:76%;
+    background-color: rgb(233, 215, 176);
+    border: solid rgba(233, 215, 176);
+    color:#777070;
+    border-radius: 10px;
+    font-size:20px;
+    overflow:auto;
+    align-items: center;
+}
+
+.taskDeleteButton{
+    display:inline-block;
+    height:80%;
+    width:11%;
+    margin-left: 0.5%;
+    background-color: rgba(116, 56, 48, 0.5);
+    border: solid rgba(116, 56, 48, 0.5);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size:15px;
+    overflow:auto;
+}
+
+.taskDeleteButton:hover{
+    background-color: rgb(116, 56, 48);
+    border: solid rgb(116, 56, 48);
+    transition: 0.5s;
+}
+
+.taskDeleteButton:not(:hover){
+    background-color: rgba(116, 56, 48, 0.5);
+    border: solid rgba(116, 56, 48, 0.5);
+    transition: 0.5s;
+}
+
+.taskDeleteButton:active{
+    background-color: rgb(80, 35, 29);
+    border: solid rgb(80, 35, 29);
+    transition: 0.25s;
+}
+
+.taskCompleteButton{
+    display:inline-block;
+    height:80%;
+    width:11%;
+    margin-left: 0.5%;
+    background-color: rgba(64, 116, 48, 0.5);
+    border: solid rgba(64, 116, 48, 0.5);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size:15px;
+    overflow:auto;
+}
+
+.taskCompleteButton:hover{
+    background-color: rgb(64, 116, 48);
+    border: solid rgb(64, 116, 48);
+    transition: 0.5s;
+}
+
+.taskCompleteButton:not(:hover){
+    background-color: rgb(64, 116, 48, 0.5);
+    border: solid rgb(64, 116, 48, 0.5);
+    transition: 0.5s;
+}
+
+.taskCompleteButton:active{
+    background-color: rgb(42, 75, 32);
+    border: solid rgb(42, 75, 32);
+    transition: 0.25s;
+}
+
+.taskCompleted{
+    background-color: rgba(73, 161, 38, 0.5);
+    box-shadow: 0px 1px 6px 1px #a3a3a3;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    align-items: center;
+    flex-direction:row;
+    height:60px;
+    width: 80%;
+    margin-top:20px;
+    border: solid rgba(233, 215, 176, 0.5);
+    border-radius: 20px;
+    overflow:auto;
+    order:0;
+}
+
+.taskTextCompleted{
+    display:inline-flex;
+    height:80%;
+    width:88%;
+    background-color: rgb(135, 170, 107);
+    border: solid rgba(35, 170, 107);
+    color:#777070;
+    border-radius: 10px;
+    font-size:20px;
+    overflow:auto;
+    align-items: center;
+    text-decoration: line-through;
+}
+
+.taskDeleteButtonCompleted{
+    display:inline-block;
+    height:80%;
+    width:10%;
+    margin-left: 0.5%;
+    background-color: rgba(116, 56, 48, 0.5);
+    border: solid rgba(116, 56, 48, 0.5);
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size:15px;
+    overflow:auto;
+}
+
+.taskDeleteButtonCompleted:hover{
+    background-color: rgb(116, 56, 48);
+    border: solid rgb(116, 56, 48);
+    transition: 0.5s;
+}
+
+.taskDeleteButtonCompleted:not(:hover){
+    background-color: rgba(116, 56, 48, 0.5);
+    border: solid rgba(116, 56, 48, 0.5);
+    transition: 0.5s;
+}
+
+.taskDeleteButtonCompleted:active{
+    background-color: rgb(80, 35, 29);
+    border: solid rgb(80, 35, 29);
+    transition: 0.25s;
+}
